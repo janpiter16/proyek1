@@ -1,0 +1,67 @@
+:root {
+    --primary: #b5b5b5;
+    --bg: rgba(237, 237, 244, 0.271);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    order: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;
+    background-color: yellow;
+    border-bottom: 5px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar a {
+    color: green;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Tambahkan aturan CSS berikut */
+.navbar:hover .navbar-logo-img {
+    transform: scale(1.2);
+}
+
+.navbar .navbar-text {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out; /* Menambahkan efek transisi pada warna teks */
+}
+
+/* Navbar hover styles */
+.navbar .navbar-text:hover {
+    color: red
+}

@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Alumni Sekolah</title>
-    <link 
-    rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header class="navbar sticky-top navbar-expand-lg navbar-light main-nav">
-        <div class="container">
-          <a class="navbar-brand" href="#">SMK N 1 Indramayu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav ms-auto py-2">
-                <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
-                <a class="nav-link active px-3" href="#">Tentang Alumni</a>
-                <a class="nav-link active px-3" href="#">Form Pengisian</a>
-            </div>
-          </div>
-        </div>
-    </header>
-    <section class="main-biru">
-        <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-6 text-center align-self-center">
-                <div class=""></div>
-                <h2>Teruslah <span>Berjuang</span>, Hingga Ke <span>Titik</span> Tertinggi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam?</p>
-                <button type="button" class="btn btn-success">LEBIH LANJUT</button>
-            </div>
-            <div class="col-lg-6">
-                <div class="px-4 py-5">
-                    <img src="assets/img/img1.jpg" class="px-4 py-4 w-100">
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>  
+  <div class="wrapper">
+    <form method="post" action="login.php">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="register.html">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
