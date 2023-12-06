@@ -1,0 +1,23 @@
+/* untuk header */
+.main-nav {
+    background-color: #00b4d8;
+}
+.main-nav .navbar-nav a.nav-link {
+    color: #fff;
+    font-weight: 400;
+}
+.main-navn.navbar-nav .nav-link.active, .main-nav .navbar-nav .nav-link:hover {
+    color: #d90429; 
+}
+
+/* untuk bg  */
+.main-biru {
+    background-color: #00b4d8 ;
+    color: #fff;
+}
+.main-biru h2 span {
+    color: #d90429;
+}
+button.btn-success {
+    background-color: #d90429;
+}
